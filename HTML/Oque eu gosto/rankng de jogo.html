@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        VideoGames!
+    </title>
+    <style>
+        .texto_cabeçalho {
+            font-size: 50px;
+
+        }
+
+        .bg-pan-br {
+            -webkit-animation: bg-pan-br 6.5s infinite alternate backwards;
+            animation: bg-pan-br 6.5s infinite alternate backwards
+        }
+
+        .texto_menor {
+            font-size: 30px;
+            color: black;
+        }
+
+        .focus-in-expand-fwd {
+            -webkit-animation: focus-in-expand-fwd .8s cubic-bezier(.25, .46, .45, .94) both;
+            animation: focus-in-expand-fwd .8s cubic-bezier(.25, .46, .45, .94) both
+        }
+
+        @-webkit-keyframes focus-in-expand-fwd {
+            0% {
+                letter-spacing: -.5em;
+                -webkit-transform: translateZ(-800px);
+                transform: translateZ(-800px);
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0
+            }
+
+            100% {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                -webkit-filter: blur(0);
+                filter: blur(0);
+                opacity: 1
+            }
+        }
+
+        @keyframes focus-in-expand-fwd {
+            0% {
+                letter-spacing: -.5em;
+                -webkit-transform: translateZ(-800px);
+                transform: translateZ(-800px);
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0
+            }
+
+            100% {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                -webkit-filter: blur(0);
+                filter: blur(0);
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes tracking-in-contract-bck-top {
+            0% {
+                letter-spacing: 1em;
+                -webkit-transform: translateZ(400px) translateY(-300px);
+                transform: translateZ(400px) translateY(-300px);
+                opacity: 0
+            }
+
+            40% {
+                opacity: .6
+            }
+
+            100% {
+                -webkit-transform: translateZ(0) translateY(0);
+                transform: translateZ(0) translateY(0);
+                opacity: 1
+            }
+        }
+
+        @keyframes tracking-in-contract-bck-top {
+            0% {
+                letter-spacing: 1em;
+                -webkit-transform: translateZ(400px) translateY(-300px);
+                transform: translateZ(400px) translateY(-300px);
+                opacity: 0
+            }
+
+            40% {
+                opacity: .6
+            }
+
+            100% {
+                -webkit-transform: translateZ(0) translateY(0);
+                transform: translateZ(0) translateY(0);
+                opacity: 1
+            }
+        }
+
+        .tracking-in-contract-bck-top {
+            -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(.215, .61, .355, 1.000) both;
+            animation: tracking-in-contract-bck-top 1s cubic-bezier(.215, .61, .355, 1.000) both
+        }
+
+        body {
+            background: rgb(104, 203, 195);
+            background: linear-gradient(90deg, rgba(104, 203, 195, 1) 17%, rgba(233, 255, 190, 0.639093137254902) 100%);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .Hiperlink {
+            color: black;
+            text-decoration: none;
+        }
+
+        .container {
+            display: c;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .foto {
+            height: 40px;
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="texto_cabeçalho">
+            <bc class="tracking-in-contract-bck-top">
+                Os melhores jogos são!
+            </bc>
+        </h1>
+        <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+            <h2 class="texto_menor">
+                1-Tom Clancy's Rainbow Six Siege (900 horas de jogo!)
+                <br>
+                2-Dota 2 (505 horas de jogo!)
+                <br>
+                3-Grand Theft Auto V (300 horas de jogo!)
+                <br>
+                4-Counter-Strike: Global Offensive (400 horas de jogo!)
+                <br>
+                5-Minecraft(provavelmente 1000 horas de jogo!)
+            </h2>
+            <br>
+            <a href="site.html"><img src="imagens do que eu gosto/de-volta.png" class="foto"> </a>
+        </div>
+    </div>
+    
+
+
+</body>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nome Do Site</title>
+  
+  <style>
+    body {
+      background-color: rgb(223, 219, 219);
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .scale-up-center {
+      -webkit-animation: scale-up-center .8s cubic-bezier(.39, .575, .565, 1.000) both;
+      animation: scale-up-center .8s cubic-bezier(.39, .575, .565, 1.000) both;
+      animation-delay: 2s; /* Atraso de 2 segundos */
+      opacity: 0; /* Inicialmente invisível */
+    }
+    
+    @-webkit-keyframes scale-up-center {
+      0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+      }
+      100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1; /* Torna visível após o atraso */
+      }
+    }
+    
+    @keyframes scale-up-center {
+      0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+      }
+      100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1; /* Torna visível após o atraso */
+      }
+    }
+    
+    .borda {
+      list-style: flex;
+      border-radius: 0%;
+      border: 1px black solid;
+      padding-right: 650px;
+      padding-left: 650px;
+    }
+    
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+      bottom: 20px;
+    }
+    
+    .texto {
+      font-size: 120px;
+      fill: none;
+      stroke: #000;
+      stroke-width: 3;
+      stroke-dasharray: 300;
+      stroke-dashoffset: 300;
+      animation: draw 2s ease-in-out forwards;
+    } 
+    
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+        fill: #000;
+      }
+    }
+    
+    .botao {
+      position: absolute;
+      bottom: 20px;
+      width: 400px;
+      height: 100px;
+      background-color: rgb(0, 0, 0);
+      border: 1px;
+      color: rgb(218, 207, 207);
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    
+    .botao:hover {
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="borda">
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+        <text class="texto">
+          <tspan x="25" y="80">M</tspan>
+          <tspan x="105" y="80">Y</tspan>
+        </text>
+      </svg>
+    </div>
+  </div>
+  
+  <a class="botao scale-up-center" href="site.html">Entrar</a>
+</body>
+</html>

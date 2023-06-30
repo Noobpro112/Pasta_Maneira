@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        VideoGames!
+    </title>
+    <style>
+        .focus-in-expand-fwd {
+            -webkit-animation: focus-in-expand-fwd .8s cubic-bezier(.25, .46, .45, .94) both;
+            animation: focus-in-expand-fwd .8s cubic-bezier(.25, .46, .45, .94) both
+        }
+
+        @-webkit-keyframes focus-in-expand-fwd {
+            0% {
+                letter-spacing: -.5em;
+                -webkit-transform: translateZ(-800px);
+                transform: translateZ(-800px);
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0
+            }
+
+            100% {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                -webkit-filter: blur(0);
+                filter: blur(0);
+                opacity: 1
+            }
+        }
+
+        @keyframes focus-in-expand-fwd {
+            0% {
+                letter-spacing: -.5em;
+                -webkit-transform: translateZ(-800px);
+                transform: translateZ(-800px);
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0
+            }
+
+            100% {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                -webkit-filter: blur(0);
+                filter: blur(0);
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes tracking-in-contract-bck-top {
+            0% {
+                letter-spacing: 1em;
+                -webkit-transform: translateZ(400px) translateY(-300px);
+                transform: translateZ(400px) translateY(-300px);
+                opacity: 0
+            }
+
+            40% {
+                opacity: .6
+            }
+
+            100% {
+                -webkit-transform: translateZ(0) translateY(0);
+                transform: translateZ(0) translateY(0);
+                opacity: 1
+            }
+        }
+
+        @keyframes tracking-in-contract-bck-top {
+            0% {
+                letter-spacing: 1em;
+                -webkit-transform: translateZ(400px) translateY(-300px);
+                transform: translateZ(400px) translateY(-300px);
+                opacity: 0
+            }
+
+            40% {
+                opacity: .6
+            }
+
+            100% {
+                -webkit-transform: translateZ(0) translateY(0);
+                transform: translateZ(0) translateY(0);
+                opacity: 1
+            }
+        }
+
+        .tracking-in-contract-bck-top {
+            -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(.215, .61, .355, 1.000) both;
+            animation: tracking-in-contract-bck-top 1s cubic-bezier(.215, .61, .355, 1.000) both
+        }
+
+        .texto_cabeçalho {
+            font-size: 50px;
+
+        }
+
+        body {
+            background: rgb(104, 203, 195);
+            background: linear-gradient(90deg, rgba(104, 203, 195, 1) 17%, rgba(233, 255, 190, 0.639093137254902) 100%);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        .Hiperlink {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .foto {
+            width: 400px;
+            height: 400px;
+
+        }
+
+        .texto {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="tracking-in-contract-bck-top">
+            Meu nome é matheus Yan dos Reis!
+        </h1>
+        <h2 class="focus-in-expand-fwd">
+
+            E eu gosto de jogar video games!
+
+        </h2>
+        <img src="imagens do que eu gosto/pog-seal-pog.gif" class="foto">
+        <p class="texto">
+            Agora irei mostrar algumas das minhas opniões, sobre jogos!
+        </p>
+        <a href="rankng de jogo.html" class="Hiperlink">Qual os melhores jogos na minha opnião?</a>
+        <br>
+        <a href="rankng de consoles.html" class=Hiperlink>Qual os melhores consoles na minha opnião?</a>
+        <br>
+        <a href="Quais jogos estou jogando.html" class="Hiperlink">Qual jogos estou jogando atualmente?</a>
+        <br>
+    </div>
+</body>
