@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        width: 10000px;
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <br>
+    1- Escreva uma função em JavaScript que mostre na tela a mensagem “Bom dia, Mundo!!!”.
+    <br>
+    <button onclick="mostrarMensagem()">Clique Aqui!</button>
+    <br>
+    2-Escreva uma função que retorne o cubo de um número fornecido pelo usuário.
+    <br>
+    <div style="padding: 10px;">
+        Digite um número:
+        <br>
+        <input type="text" id="num1">
+        <br>
+        <button onclick="calcularCubo()">Calcular</button>
+        <br>
+        <p id="resultado2"></p>
+    </div>
+    3-Escreva uma função em JavaScript que realize a conversão de uma temperatura fornecida em graus Fahrenheit (F) para
+    Celsius (C).
+    <br>
+    <div style="padding: 10px;">
+        Digite os graus Fahrenheit (F):
+        <br>
+        <input type="text" id="num4">
+        <br>
+        <button onclick="converterTemperatura()">Calcular</button>
+        <br>
+        <p id="resultado3"></p>
+    </div>
+    <br>
+    4- Escreva uma função que retorne a área de um triângulo, a partir dos valores de base e altura fornecidos.
+    <br>
+    <div style="padding: 10px;">
+        Base?
+        <br>
+        <input type="text" id="base">
+        <br>
+        Altura?
+        <br>
+        <input type="text" id="altura">
+        <br>
+        <button onclick="calcularAreaTriangulo()">Calcular</button>
+        <br>
+        <p id="resultado4"></p>
+    </div>
+    <br>
+    5- Escreva uma função que encontre a área e o perímetro de um círculo, de acordo com o raio fornecido.
+    <br>
+    <div style="padding: 10px;">
+        Raio:
+        <br>
+        <input type="text" id="raio">
+        <br>
+        <button onclick="calcularAreaPerimetroCirculo()">Calcular</button>
+        <br>
+        <p id="resultado5"></p>
+    </div>
+    <br>
+    6- Escreva uma função que permita contar o número de letras contidas em uma string fornecida pelo usuário.
+    <br>
+    <div style="padding: 10px;">
+        Digite uma string:
+        <br>
+        <input type="text" id="texto">
+        <br>
+        <button onclick="contarLetras()">Contar</button>
+        <br>
+        <p id="resultado6"></p>
+    </div>
+
+    <!--formulario usado para enviar informações para outro site-->
+    <!-- <form action="site.html" method='post'> Digite seu Email!
+        <br> -->
+        <!--Post é utilizado para não mostrar os itens confidenciais no endereço/link-->
+        <!-- <input type="text" id="email">
+        <br> -->
+        <!--Id só pode ter um, necessário para o JavaScript executar comandos-->
+        <!-- Digite sua senha!
+        <br>
+        <input type="text" id="Senha">
+        <br>
+        <button onclick="enviar();">Entrar</button> -->
+    <!-- </form> -->
+
+    <script>
+        function mostrarMensagem() {
+            alert('Bom dia, Mundo!!!');
+        }
+
+        function calcularCubo() {
+            var numero1 = parseInt(document.getElementById("num1").value);
+            var cubo = numero1 ** 3;
+            document.getElementById("resultado2").innerHTML = cubo;
+        }
+
+        function converterTemperatura() {
+            var fahrenheit = parseInt(document.getElementById("num4").value);
+            var celsius = (fahrenheit - 32) * 5 / 9;
+            document.getElementById("resultado3").innerHTML = celsius.toFixed(2) + " (ºC)";
+        }
+
+        function calcularAreaPerimetroCirculo() {
+            var raio = parseInt(document.getElementById("raio").value);
+            var area = Math.PI * raio ** 2;
+            var perimetro = 2 * Math.PI * raio;
+            document.getElementById("resultado5").innerHTML = "A área do círculo é: " + area.toFixed(2) + " e o perímetro é: " + perimetro.toFixed(2);
+        }
+
+        function calcularAreaTriangulo() {
+            var base = parseInt(document.getElementById("base").value);
+            var altura = parseInt(document.getElementById("altura").value);
+            var area = (base * altura) / 2;
+            document.getElementById("resultado4").innerHTML = "A área do triângulo é: " + area;
+        }
+
+        function contarLetras() {
+            var texto = document.getElementById("texto").value;
+            var numeroLetras = texto.length;
+            document.getElementById("resultado6").innerHTML = "O número de letras na string é: " + numeroLetras;
+        }
+    </script>
+</body>
+
+</html>
