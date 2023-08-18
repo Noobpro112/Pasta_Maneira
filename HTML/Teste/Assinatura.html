@@ -18,6 +18,8 @@
       animation: scale-up-center .8s cubic-bezier(.39, .575, .565, 1.000) both;
       animation-delay: 3.60s; 
       opacity: 0; 
+      width:90;
+      height:10;
     }
     
     @-webkit-keyframes scale-up-center {
@@ -50,15 +52,24 @@
       border: 1px black solid;
       padding-right: 650px;
       padding-left: 650px;
+      padding-top: 200px;
+      padding-bottom: 200px;
     }
     
     .logo {
-      display: flex;
+      display: absolute;
       justify-content: center;
       align-items: center;
       width: 300px;
       height: 300px;
       bottom: 20px;
+    }
+    .sub {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 20px;
+      font-weight: bold
     }
     
     .texto {
@@ -80,9 +91,9 @@
     
     .botao {
       position: absolute;
-      bottom: 20px;
-      width: 400px;
-      height: 100px;
+      bottom: 200px;
+      width: 160px;
+      height:60px;
       background-color: rgb(0, 0, 0);
       border: 1px;
       color: rgb(218, 207, 207);
@@ -92,6 +103,7 @@
       align-items: center;
       text-decoration: none;
       transition: background-color 0.3s;
+      border-radius: 80ex;
     }
     
     .botao:hover {
@@ -104,10 +116,13 @@
     <div class="logo">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
         <text class="texto">
-          <tspan x="25" y="80">M</tspan>
+          <tspan x="25" y="80">K</tspan>
           <tspan x="105" y="80">Y</tspan>
         </text>
       </svg>
+      <div class="scale-up-center">
+        <p class="sub">Feito por Matheus Yan</p>
+      </div>
     </div>
   </div>
   

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISICAAAAAAAAA!</title>
+    <style>
+        /* Estilizando a barra de rolagem */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Estilizando o track (trilha da barra de rolagem) */
+        ::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+
+        /* Estilizando o thumb (o próprio "botão" da barra de rolagem) */
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 5px;
+        }
+
+        /* Mudando a cor do thumb quando estiver em hover (quando o usuário passa o mouse por cima) */
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .fomulario {
+            margin-bottom: 20px;
+        }
+
+        .Historico {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0cc705;
+            transition: background-color 0.5s ease-in-out;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        .result {
+            font-weight: bold;
+        }
+
+        #historicoDiv {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="inputsPersonalizados" style="display: none;">
+            <label for="input1">Nome do campo 1:</label>
+            <input type="text" id="input1">
+
+            <label for="input2">Nome do campo 2:</label>
+            <input type="text" id="input2">
+        </div>
+        <div id="calculoResultado" style="display: none;">
+            <label for="s0">s0:</label>
+            <input type="number" id="s0">
+            <br>
+            <label for="v">v:</label>
+            <input type="number" id="v">
+            <br>
+            <label for="deltaT">Delta t:</label>
+            <input type="number" id="deltaT">
+            <br>
+            <button onclick="CalcularResultado()">Calcular</button>
+            <p id="resultado"></p>
+        </div>
+        <div id="esconder">
+
+            <h1>Física!</h1>
+            <h2>Fórmulas.</h2>
+            <h4>Movimentos.</h4>
+            <p class="formulario">
+                1-Movimento retilíneo uniforme
+                <br>
+                2-Movimento retilíneo uniformemente variado (descobrir o s)
+                <br>
+                3-Movimento retilíneo uniformemente variado (descobrir o v)
+                <br>
+                4-Movimento retilíneo uniformemente variado (descobrir o v^2)
+                <br>
+                5-Movimento Circular Uniforme (v = ω . R)
+                <br>
+                6-Movimento Circular Uniforme (ω=2.pi.f)
+                <br>
+                7-Movimento Circular Uniforme (acp = V^2/R)
+                <br>
+                8-Lançamento Oblíquo (vx = v0 . cos θ)
+                <br>
+                9-Lançamento Oblíquio (v0y = v0 . sen θ)
+                <br>
+                10-Lançamento Oblíquio (vy = v0y + a . t)
+                <br>
+                11- Lançamento Oblíquio (H=V0^2.sen^2.0/2.g)
+                <br>
+                12-Lançamento Oblíquio (A=v^2.sen20/g)
+            </p>
+            <h4>Dinâmica</h4>
+            <p class="formulario">
+                13 - Fr = (m . 4)
+                <br>
+                14 - P = (m.g)
+                <br>
+                15- fat = (µ . N)
+                <br>
+            </p>
+            <div class="fomulario"><label>Escolha uma formula! (digite o número dela na caixa)</label><input type="text"
+                    id="Numero" placeholder="Número"><button onclick="MostrarCampos()">Confirmar</button>
+            </div>
+        </div>
+        <button id="voltar" style="display: none;" onclick="Voltar()">Voltar</button>
+    </div>
+</body>
+<script>
+    var paginaAtual = '';
+
+    function MostrarCampos() {
+        var Formula = document.getElementById("Numero").value;
+        if (Formula === '1') {
+            paginaAtual = '1';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('s0', 'v0', 't', 'a');
+        } else if (Formula === '2') {
+            paginaAtual = '2';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('s0', 'v0', 't', 'a');
+        } else if (Formula === '3') {
+            paginaAtual = '3';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('v0', 'a', 't');
+        } else if (Formula === '4') {
+            paginaAtual = '4';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('v0', 'a', 'Deltas');
+        } else if (Formula === '5') {
+            paginaAtual = '5';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('ω', 'R');
+        } else if (Formula === '6') {
+            paginaAtual = '6';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('f');
+        } else if (Formula === '7') {
+            paginaAtual = '7';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('f');
+        } else if (Formula === '8') {
+            paginaAtual = '8';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('V', 'r');
+        } else if (Formula === '9') {
+            paginaAtual = '9';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('v0', 'θ');
+        } else if (Formula === '10') {
+            paginaAtual = '10';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('v0y', 'a', 't');
+        } else if (Formula === '11') {
+            paginaAtual = '11';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('V0', 'θ', 'g');
+        } else if (Formula === '12') {
+            paginaAtual = '12';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('v', 'g');
+        } else if (Formula === '13') {
+            paginaAtual = '13';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('m', 'a');
+        } else if (Formula === '14') {
+            paginaAtual = '14';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('m', 'g');
+        } else if (Formula === '15') {
+            paginaAtual = '15';
+            document.getElementById('esconder').style.display = 'none';
+            ExibirCamposFormula('µ', 'N');
+        } else {
+            alert('Coloque um número válido abaixo.');
+        }
+    }
+
+    function ExibirCamposFormula(...nomesCampos) {
+        var camposPersonalizados = document.getElementById("inputsPersonalizados");
+        camposPersonalizados.innerHTML = '';
+
+        for (var nome of nomesCampos) {
+            camposPersonalizados.innerHTML += `
+            <label for="${nome}">${nome}:</label>
+            <input type="number" id="${nome}">
+            <br>
+        `;
+        }
+
+        camposPersonalizados.innerHTML += '<button onclick="CalcularFormula()">Calcular</button>';
+        camposPersonalizados.style.display = 'block';
+    }
+
+    function CalcularFormula() {
+        var resultado = 0;
+
+        if (paginaAtual === '1' || paginaAtual === '2') {
+            var s0 = parseFloat(document.getElementById('s0').value);
+            var v0 = parseFloat(document.getElementById('v0').value);
+            var t = parseFloat(document.getElementById('t').value);
+            var a = parseFloat(document.getElementById('a').value);
+
+            resultado = s0 + v0 * t + 0.5 * a * Math.pow(t, 2);
+        } else if (paginaAtual === '3') {
+            var v0 = parseFloat(document.getElementById('v0').value);
+            var a = parseFloat(document.getElementById('a').value);
+            var t = parseFloat(document.getElementById('t').value);
+
+            resultado = v0 + a * t;
+        } else if (paginaAtual === '4') {
+            var v0 = parseFloat(document.getElementById('v0').value);
+            var a = parseFloat(document.getElementById('a').value);
+            var Deltas = parseFloat(document.getElementById('Deltas').value);
+
+            resultado = Math.pow(v0, 2) + 2 * a * Deltas;
+        } else if (paginaAtual === '5') {
+            var ω = parseFloat(document.getElementById('ω').value);
+            var R = parseFloat(document.getElementById('R').value);
+
+            resultado = ω * R;
+        } else if (paginaAtual === '6') {
+            var f = parseFloat(document.getElementById('f').value);
+
+            resultado = 1 / f;
+        } else if (paginaAtual === '7') {
+            var f = parseFloat(document.getElementById('f').value);
+
+            resultado = 2 * Math.PI * f;
+        } else if (paginaAtual === '8') {
+            var V = parseFloat(document.getElementById('V').value);
+            var r = parseFloat(document.getElementById('r').value);
+
+            resultado = Math.pow(V, 2) / r;
+        } else if (paginaAtual === '9') {
+            var v0 = parseFloat(document.getElementById('v0').value);
+            var θ = parseFloat(document.getElementById('θ').value);
+
+            resultado = v0 * Math.cos(θ);
+        } else if (paginaAtual === '10') {
+            var v0y = parseFloat(document.getElementById('v0y').value);
+            var a = parseFloat(document.getElementById('a').value);
+            var t = parseFloat(document.getElementById('t').value);
+
+            resultado = v0y + a * t;
+        } else if (paginaAtual === '11') {
+            var V0 = parseFloat(document.getElementById('V0').value);
+            var θ = parseFloat(document.getElementById('θ').value);
+            var g = parseFloat(document.getElementById('g').value);
+
+            resultado = Math.pow(V0, 2) * Math.pow(Math.sin(θ), 2) / (2 * g);
+        } else if (paginaAtual === '12') {
+            var v = parseFloat(document.getElementById('v').value);
+            var g = parseFloat(document.getElementById('g').value);
+
+            resultado = Math.pow(v, 2) * Math.sin(20) / g;
+        } else if (paginaAtual === '13') {
+            var m = parseFloat(document.getElementById('m').value);
+            var a = parseFloat(document.getElementById('a').value);
+
+            resultado = m * a;
+        } else if (paginaAtual === '14') {
+            var m = parseFloat(document.getElementById('m').value);
+            var g = parseFloat(document.getElementById('g').value);
+
+            resultado = m * g;
+        } else if (paginaAtual === '15') {
+            var µ = parseFloat(document.getElementById('µ').value);
+            var N = parseFloat(document.getElementById('N').value);
+
+            resultado = µ * N;
+        }
+
+        var resultadoDiv = document.getElementById('calculoResultado');
+        resultadoDiv.style.display = 'block';
+        resultadoDiv.innerHTML = 'Resultado: ' + resultado;
+
+        document.getElementById('voltar').style.display = 'block';
+        document.getElementById('inputsPersonalizados').style.display = 'none';
+    }
+
+    function Voltar() {
+        document.getElementById('voltar').style.display = 'none';
+        document.getElementById('calculoResultado').style.display = 'none';
+        document.getElementById('esconder').style.display = 'block';
+        document.getElementById('inputsPersonalizados').style.display = 'none';
+    }
+
+</script>
+
+</html>

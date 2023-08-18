@@ -1,100 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    body {
-        width: 10000px;
-    }
-</style>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Estilizando a barra de rolagem */
+        ::-webkit-scrollbar {
+         width: 10px;
+        }
+
+        /* Estilizando o track (trilha da barra de rolagem) */
+        ::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        }
+
+        /* Estilizando o thumb (o próprio "botão" da barra de rolagem) */
+        ::-webkit-scrollbar-thumb {
+          background-color: #888;
+         border-radius: 5px;
+        }
+
+        /* Mudando a cor do thumb quando estiver em hover (quando o usuário passa o mouse por cima) */
+        ::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        .result {
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
-    <br>
-    1- Escreva uma função em JavaScript que mostre na tela a mensagem “Bom dia, Mundo!!!”.
-    <br>
-    <button onclick="mostrarMensagem()">Clique Aqui!</button>
-    <br>
-    2-Escreva uma função que retorne o cubo de um número fornecido pelo usuário.
-    <br>
-    <div style="padding: 10px;">
-        Digite um número:
-        <br>
-        <input type="text" id="num1">
-        <br>
-        <button onclick="calcularCubo()">Calcular</button>
-        <br>
-        <p id="resultado2"></p>
+    <div class="container">
+        <h1>Exercícios JavaScript</h1>
+        <div class="form-group">
+            <label>1. Escreva uma função em JavaScript que mostre na tela a mensagem "Bom dia, Mundo!!!"</label>
+            <button onclick="mostrarMensagem()">Clique Aqui!</button>
+        </div>
+        <div class="form-group">
+            <label>2. Escreva uma função que retorne o cubo de um número fornecido pelo usuário</label>
+            <input type="text" id="num1" placeholder="Digite um número">
+            <button onclick="calcularCubo()">Calcular</button>
+            <p id="resultado2"></p>
+        </div>
+        <div class="form-group">
+            <label>3. Escreva uma função em JavaScript que realize a conversão de uma temperatura fornecida em graus
+                Fahrenheit (F) para Celsius (C)</label>
+            <input type="text" id="num4" placeholder="Digite os graus Fahrenheit (F)">
+            <br>
+            <button onclick="converterTemperatura()">Calcular</button>
+            <br>
+            <p id="resultado3"></p>
+        </div>
+        <div class="form-group">
+            <label>4. Escreva uma função que retorne a área de um triângulo, a partir dos valores de base e altura
+                fornecidos</label>
+            <input type="text" id="base" placeholder="Base">
+            <input type="text" id="altura" placeholder="Altura">
+            <br>
+            <button onclick="calcularAreaTriangulo()">Calcular</button>
+            <br>
+            <p id="resultado4"></p>
+        </div>
+        <div class="form-group">
+            <label>5. Escreva uma função que encontre a área e o perímetro de um círculo, de acordo com o raio
+                fornecido</label>
+            <input type="text" id="raio" placeholder="Raio">
+            <button onclick="calcularAreaPerimetroCirculo()">Calcular</button>
+            <br>
+            <p id="resultado5"></p>
+        </div>
+        <div class="form-group">
+            <label>6. Escreva uma função que permita contar o número de letras contidas em uma string fornecida pelo
+                usuário</label>
+            <input type="text" id="texto" placeholder="Digite uma string">
+            <button onclick="contarLetras()">Contar</button>
+            <br>
+            <p id="resultado6"></p>
+        </div>
+        <div class="form-group">
+            <label>7. Faça um script que pede duas notas de um aluno. Em seguida, ele deve calcular a média do aluno e
+                dar o seguinte resultado:</label>
+            <ul>
+                <li>"Aprovado", se a média alcançada for maior ou igual a sete</li>
+                <li>"Reprovado", se a média for menor do que sete</li>
+            </ul>
+            <br>
+            <input type="text" id="nota1" placeholder="Digite a primeira nota">
+            <input type="text" id="nota2" placeholder="Digite a segunda nota">
+            <br>
+            <button onclick="_media()">Calcular Média</button>
+            <p id="resultado7"></p>
+        </div>
     </div>
-    3-Escreva uma função em JavaScript que realize a conversão de uma temperatura fornecida em graus Fahrenheit (F) para
-    Celsius (C).
-    <br>
-    <div style="padding: 10px;">
-        Digite os graus Fahrenheit (F):
-        <br>
-        <input type="text" id="num4">
-        <br>
-        <button onclick="converterTemperatura()">Calcular</button>
-        <br>
-        <p id="resultado3"></p>
-    </div>
-    <br>
-    4- Escreva uma função que retorne a área de um triângulo, a partir dos valores de base e altura fornecidos.
-    <br>
-    <div style="padding: 10px;">
-        Base?
-        <br>
-        <input type="text" id="base">
-        <br>
-        Altura?
-        <br>
-        <input type="text" id="altura">
-        <br>
-        <button onclick="calcularAreaTriangulo()">Calcular</button>
-        <br>
-        <p id="resultado4"></p>
-    </div>
-    <br>
-    5- Escreva uma função que encontre a área e o perímetro de um círculo, de acordo com o raio fornecido.
-    <br>
-    <div style="padding: 10px;">
-        Raio:
-        <br>
-        <input type="text" id="raio">
-        <br>
-        <button onclick="calcularAreaPerimetroCirculo()">Calcular</button>
-        <br>
-        <p id="resultado5"></p>
-    </div>
-    <br>
-    6- Escreva uma função que permita contar o número de letras contidas em uma string fornecida pelo usuário.
-    <br>
-    <div style="padding: 10px;">
-        Digite uma string:
-        <br>
-        <input type="text" id="texto">
-        <br>
-        <button onclick="contarLetras()">Contar</button>
-        <br>
-        <p id="resultado6"></p>
-    </div>
-
-    <!--formulario usado para enviar informações para outro site-->
-    <!-- <form action="site.html" method='post'> Digite seu Email!
-        <br> -->
-        <!--Post é utilizado para não mostrar os itens confidenciais no endereço/link-->
-        <!-- <input type="text" id="email">
-        <br> -->
-        <!--Id só pode ter um, necessário para o JavaScript executar comandos-->
-        <!-- Digite sua senha!
-        <br>
-        <input type="text" id="Senha">
-        <br>
-        <button onclick="enviar();">Entrar</button> -->
-    <!-- </form> -->
 
     <script>
         function mostrarMensagem() {
@@ -102,35 +156,46 @@
         }
 
         function calcularCubo() {
-            var numero1 = parseInt(document.getElementById("num1").value);
+            var numero1 = parseFloat(document.getElementById("num1").value);
             var cubo = numero1 ** 3;
             document.getElementById("resultado2").innerHTML = cubo;
         }
 
         function converterTemperatura() {
-            var fahrenheit = parseInt(document.getElementById("num4").value);
+            var fahrenheit = parseFloat(document.getElementById("num4").value);
             var celsius = (fahrenheit - 32) * 5 / 9;
             document.getElementById("resultado3").innerHTML = celsius.toFixed(2) + " (ºC)";
         }
 
         function calcularAreaPerimetroCirculo() {
-            var raio = parseInt(document.getElementById("raio").value);
+            var raio = parseFloat(document.getElementById("raio").value);
             var area = Math.PI * raio ** 2;
             var perimetro = 2 * Math.PI * raio;
             document.getElementById("resultado5").innerHTML = "A área do círculo é: " + area.toFixed(2) + " e o perímetro é: " + perimetro.toFixed(2);
         }
 
         function calcularAreaTriangulo() {
-            var base = parseInt(document.getElementById("base").value);
-            var altura = parseInt(document.getElementById("altura").value);
+            var base = parseFloat(document.getElementById("base").value);
+            var altura = parseFloat(document.getElementById("altura").value);
             var area = (base * altura) / 2;
-            document.getElementById("resultado4").innerHTML = "A área do triângulo é: " + area;
+            document.getElementById("resultado4").innerHTML = "A área do triângulo é: " + area.toFixed(2);
         }
 
         function contarLetras() {
             var texto = document.getElementById("texto").value;
             var numeroLetras = texto.length;
             document.getElementById("resultado6").innerHTML = "O número de letras na string é: " + numeroLetras;
+        }
+
+        function _media() {
+            var n1 = parseFloat(document.getElementById("nota1").value);
+            var n2 = parseFloat(document.getElementById("nota2").value);
+            var média = (n1 + n2) / 2;
+            if (média >= 7) {
+                document.getElementById("resultado7").innerHTML = "Você está aprovado com a média: " + média;
+            } else {
+                document.getElementById("resultado7").innerHTML = "Você está Reprovado com a média: " + média;
+            }
         }
     </script>
 </body>
