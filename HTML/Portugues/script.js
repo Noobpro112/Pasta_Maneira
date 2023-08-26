@@ -3,7 +3,7 @@ function facil(){
 }
 function intermediario(){
     document.getElementById('facil').style.display = 'none';
-    document.getElementById('facil').innerHTML;
+    document.getElementById('facil').innerHTML = "a";
 }
 function dificil(){
     document.getElementById('facil').style.display = 'none';
