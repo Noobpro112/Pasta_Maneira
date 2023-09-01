@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador!</title>
+    <style>
+        /* Estilizando a barra de rolagem */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Estilizando o track (trilha da barra de rolagem) */
+        ::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+
+        /* Estilizando o thumb (o próprio "botão" da barra de rolagem) */
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 5px;
+        }
+
+        /* Mudando a cor do thumb quando estiver em hover (quando o usuário passa o mouse por cima) */
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+
+        body {
+            font-family: Arial, sans-serif;     
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .fomulario {
+            margin-bottom: 20px;
+        }
+
+        .Historico {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0cc705;
+            transition: background-color 0.5s ease-in-out;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        .result {
+            font-weight: bold;
+        }
+
+        #historicoDiv {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sorteador!</h1>
+        <div class="fomulario">
+            <label>Digite um número de 1 a 100!</label>
+            <input type="text" id="Numero" placeholder="Número">
+            <button onclick="sortear()">Confirmar</button>
+            <p id="1">
+                Numero Sorteado foi:
+            </p>
+        </div>
+        <div class="Historico" id="historicoDiv">
+            <h1>
+                Histórico
+            </h1>
+            <div id="historico"></div>
+        </div>
+        <p id="totalTentativas">Total de tentativas: 0</p>
+    </div>
+    <script>
+        let historicoTextos = [];
+        let totalTentativas = 0;
+
+        function sortear() {
+            const number = Math.floor(Math.random() * 100) + 1;
+            const palpite = document.getElementById("Numero").value;
+            const acertou = palpite == number ? "Você Acertou" : "Você Errou";
+            const tentativa = `${dataAtual} - Tentativa: ${palpite} - Resultado: ${acertou}`;
+            historicoTextos.unshift(tentativa);
+            totalTentativas++;
+
+            atualizarHistorico();
+            atualizarTotalTentativas();
+            document.getElementById("Numero").value = '';
+            document.getElementById("1").innerHTML = "O numero sorteado foi: " + number
+        }
+
+        function atualizarTotalTentativas() {
+            const totalTentativasElement = document.getElementById("totalTentativas");
+            totalTentativasElement.textContent = `Total de tentativas: ${totalTentativas}`;
+        }
+
+        function atualizarHistorico() {
+            const historicoDiv = document.getElementById("historico");
+            historicoDiv.innerHTML = '';
+
+            for (let i = 0; i < historicoTextos.length; i++) {
+                const historicoItem = document.createElement("p");
+                historicoItem.textContent = historicoTextos[i];
+                historicoDiv.appendChild(historicoItem);
+            }
+        }
+
+        const hoje = new Date()
+        const dia = hoje.getDate().toString().padStart(2, '0')
+        const mes = String(hoje.getMonth() + 1).padStart(2, '0')
+        const ano = hoje.getFullYear()
+        const dataAtual = `${dia}/${mes}/${ano}`
+
+        const historicoDiv = document.getElementById("historicoDiv");
+        historicoDiv.scrollTop = historicoDiv.scrollHeight;
+    </script>
+</body>
+
+</html>
