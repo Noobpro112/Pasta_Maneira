@@ -50,3 +50,29 @@ function errado3(){
     
     document.getElementById('justi3').innerHTML = 'A oração coordenada aditiva é introduzida pela conjunção "e", indicando a adição das atividades "toma café" e "lê o jornal".'
 }
+
+function correto4(){
+    let caixa_Misteriosa = document.getElementById('respostas4');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User4').innerHTML = 'Você acertou!'
+}
+function errado4(){
+    let caixa_misteriosa = document.getElementById('respostas4');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User4').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi4').innerHTML = 'A oração coordenada aditiva é introduzida pela conjunção "e", indicando a adição das atividades "toma café" e "lê o jornal".'
+}
+
+function correto5(){
+    let caixa_Misteriosa = document.getElementById('respostas5');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User5').innerHTML = 'Você acertou!'
+}
+function errado5(){
+    let caixa_misteriosa = document.getElementById('respostas5');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User5').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi5').innerHTML = 'A oração coordenada aditiva é introduzida pela conjunção "e", indicando a adição das atividades "toma café" e "lê o jornal".'
+}
