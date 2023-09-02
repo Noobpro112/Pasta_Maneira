@@ -47,7 +47,7 @@ function errado4(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User4').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi4').innerHTML = 'A oração coordenada aditiva é introduzida pela conjunção "e", indicando a adição das atividades "toma café" e "lê o jornal".'
+    document.getElementById('justi4').innerHTML = 'A oração coordenada aditiva é introduzida pela conjunção "e", indicando a adição das atividades "estuda muito" e "tirou boas notas".'
 }
 
 function correto5(){
@@ -60,5 +60,70 @@ function errado5(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User5').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi5').innerHTML = 'A oração coordenada aditiva é introduzida pela conjunção "e", indicando a adição das atividades "toma café" e "lê o jornal".'
+    document.getElementById('justi5').innerHTML = 'A oração coordenada sindética alternativa é introduzida pela conjunção "ou", indicando uma alternativa entre as opções "estuda muito" e "tirou boas notas".'
+}
+
+function correto6(){
+    let caixa_Misteriosa = document.getElementById('respostas6');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User6').innerHTML = 'Você acertou!'
+}
+function errado6(){
+    let caixa_misteriosa = document.getElementById('respostas6');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User6').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi6').innerHTML = 'A oração coordenada na frase é introduzida pela conjunção "embora", assim caracterizando a oração com sentido de "Oposição"'
+}
+
+function correto7(){
+    let caixa_Misteriosa = document.getElementById('respostas7');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User7').innerHTML = 'Você acertou!'
+}
+function errado7(){
+    let caixa_misteriosa = document.getElementById('respostas7');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User7').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi7').innerHTML = '"Pois" introduz uma oração coordenada sindética explicativa, fornecendo uma explicação para "ele se esforçou bastante."'
+}
+
+function correto8(){
+    let caixa_Misteriosa = document.getElementById('respostas8');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User8').innerHTML = 'Você acertou!'
+}
+function errado8(){
+    let caixa_misteriosa = document.getElementById('respostas8');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User8').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi8').innerHTML = '"Mas" introduz uma oração coordenada adversativa, indicando contraposição entre "gostaria de ir ao cinema" e "estou ocupado hoje."'
+}
+
+function correto9(){
+    let caixa_Misteriosa = document.getElementById('respostas9');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User9').innerHTML = 'Você acertou!'
+}
+function errado9(){
+    let caixa_misteriosa = document.getElementById('respostas9');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User9').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi9').innerHTML = '"Não só... como também" indica adição, mostrando que ambas as ações estão ocorrendo.'
+}
+
+function correto10(){
+    let caixa_Misteriosa = document.getElementById('respostas10');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User10').innerHTML = 'Você acertou!'
+}
+function errado10(){
+    let caixa_misteriosa = document.getElementById('respostas10');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User10').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi10').innerHTML = '"Portanto" indica uma relação conclusiva entre "ela estava cansada" e "decidiu descansar."'
 }

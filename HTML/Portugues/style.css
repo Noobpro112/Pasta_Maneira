@@ -32,6 +32,7 @@ h1 {
 
 .container {
     max-width: 800px;
+    max-height: 2000px;
     margin:0 auto;
     background-color: #fff;
     padding: 30px;
