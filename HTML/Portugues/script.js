@@ -127,3 +127,133 @@ function errado10(){
     
     document.getElementById('justi10').innerHTML = '"Portanto" indica uma relação conclusiva entre "ela estava cansada" e "decidiu descansar."'
 }
+
+function correto11(){
+    let caixa_Misteriosa = document.getElementById('respostas11');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User11').innerHTML = 'Você acertou!'
+}
+function errado11(){
+    let caixa_misteriosa = document.getElementById('respostas11');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User11').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi11').innerHTML = 'Não há coordenação de conjunções aqui; as ações são listadas sem conjunções, o que constitui uma coordenação assindética.'
+}
+
+function correto12(){
+    let caixa_Misteriosa = document.getElementById('respostas12');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User12').innerHTML = 'Você acertou!'
+}
+function errado12(){
+    let caixa_misteriosa = document.getElementById('respostas12');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User12').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi12').innerHTML = '"Logo" indica uma relação de conclusão entre "ele não estuda" e "não passa nas provas."'
+}
+
+function correto13(){
+    let caixa_Misteriosa = document.getElementById('respostas13');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User13').innerHTML = 'Você acertou!'
+}
+function errado13(){
+    let caixa_misteriosa = document.getElementById('respostas13');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User13').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi13').innerHTML = '"Contudo" introduz uma oração coordenada adversativa, indicando uma contraposição entre "a chuva é intensa" e "as ruas estão secas."'
+}
+
+function correto14(){
+    let caixa_Misteriosa = document.getElementById('respostas14');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User14').innerHTML = 'Você acertou!'
+}
+function errado14(){
+    let caixa_misteriosa = document.getElementById('respostas14');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User14').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi14').innerHTML = '"Todavia" introduz uma oração coordenada sindética alternativa, indicando uma escolha alternativa com uma condição implícita.'
+}
+
+function correto15(){
+    let caixa_Misteriosa = document.getElementById('respostas15');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User15').innerHTML = 'Você acertou!'
+}
+function errado15(){
+    let caixa_misteriosa = document.getElementById('respostas15');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User15').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi15').innerHTML = ' "De modo que" introduz uma oração coordenada sindética conclusiva, indicando uma conclusão lógica da ação anterior.'
+}
+
+function correto16(){
+    let caixa_Misteriosa = document.getElementById('respostas16');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User16').innerHTML = 'Você acertou!'
+}
+function errado16(){
+    let caixa_misteriosa = document.getElementById('respostas16');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User16').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi16').innerHTML = ' "Portanto" indica uma relação conclusiva entre "ele foi aprovado no vestibular" e "comemorou com os amigos."'
+}
+
+function correto17(){
+    let caixa_Misteriosa = document.getElementById('respostas17');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User17').innerHTML = 'Você acertou!'
+}
+function errado17(){
+    let caixa_misteriosa = document.getElementById('respostas17');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User17').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi17').innerHTML = ' "Logo" introduz uma oração coordenada sindética conclusiva, indicando uma conclusão lógica entre "ela estudou muito" e "conseguiu uma bolsa de estudos."'
+}
+
+function correto18(){
+    let caixa_Misteriosa = document.getElementById('respostas18');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User18').innerHTML = 'Você acertou!'
+}
+function errado18(){
+    let caixa_misteriosa = document.getElementById('respostas18');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User18').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi18').innerHTML = ' "Mas" introduz uma oração coordenada adversativa, indicando contraposição entre "ele gostaria de ir à festa" e "precisava estudar para a prova."'
+}
+
+function correto19(){
+    let caixa_Misteriosa = document.getElementById('respostas19');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User19').innerHTML = 'Você acertou!'
+}
+function errado19(){
+    let caixa_misteriosa = document.getElementById('respostas19');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User19').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi19').innerHTML = '"Entre viajar nas férias ou fazer um estágio de verão" apresenta uma escolha alternativa, e "escolher" é a primeira opção.'
+}
+
+function correto20(){
+    let caixa_Misteriosa = document.getElementById('respostas20');
+    caixa_Misteriosa.style.display==='none' ? caixa_Misteriosa.style.display = 'block' : caixa_Misteriosa.style.display = 'none'
+    document.getElementById('User20').innerHTML = 'Você acertou!'
+}
+function errado20(){
+    let caixa_misteriosa = document.getElementById('respostas20');
+    caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
+    document.getElementById('User20').innerHTML = 'Você Errou!'
+    
+    document.getElementById('justi20').innerHTML = '"Por isso" indica uma relação causal entre "ele trabalhou muito" e "conseguiu a promoção."'
+}
