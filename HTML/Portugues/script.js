@@ -216,7 +216,7 @@ function errado17(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User17').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi17').innerHTML = ' "Logo" introduz uma oração coordenada sindética conclusiva, indicando uma conclusão lógica entre "ela estudou muito" e "conseguiu uma bolsa de estudos."'
+    document.getElementById('justi17').innerHTML = 'A oração "logo conseguiu uma bolsa de estudos" expressa a conclusão resultante da ação anterior de "ela estudou muito".'
 }
 
 function correto18(){
@@ -229,7 +229,7 @@ function errado18(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User18').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi18').innerHTML = ' "Mas" introduz uma oração coordenada adversativa, indicando contraposição entre "ele gostaria de ir à festa" e "precisava estudar para a prova."'
+    document.getElementById('justi18').innerHTML = 'A conjunção "mas" introduz uma oração coordenada adversativa que contrasta as duas ações: "gostaria de ir à festa" e "precisava estudar para a prova".'
 }
 
 function correto19(){
@@ -242,7 +242,7 @@ function errado19(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User19').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi19').innerHTML = '"Entre viajar nas férias ou fazer um estágio de verão" apresenta uma escolha alternativa, e "escolher" é a primeira opção.'
+    document.getElementById('justi19').innerHTML = 'A oração "escolher" expressa a alternativa que "ela" pode tomar entre as duas opções apresentadas.'
 }
 
 function correto20(){
@@ -255,5 +255,5 @@ function errado20(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User20').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi20').innerHTML = '"Por isso" indica uma relação causal entre "ele trabalhou muito" e "conseguiu a promoção."'
+    document.getElementById('justi20').innerHTML = 'A oração "por isso conseguiu a promoção" indica que a promoção foi alcançada como resultado ou consequência da ação anterior de "trabalhou muito".'
 }
