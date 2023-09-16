@@ -138,7 +138,7 @@ function errado11(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User11').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi11').innerHTML = 'Correção:1- Correu demais, por isso caiu. (oração coordenada sindética conclusiva) 2-Dormiu mal, porque os sonhos não o deixaram em paz. (oração coordenada sindética explicativa) 3-A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa) 4-Leu o livro, portanto é capaz de descrever as personagens com detalhes. (oração coordenada sindética conclusiva) 5-Guarde seus pertences, que podem servir mais tarde. (oração coordenada sindética explicativa)'
+    document.getElementById('justi11').innerHTML = ('Correção:1- Correu demais, por isso caiu. (oração coordenada sindética conclusiva) 2-Dormiu mal, porque os sonhos não o deixaram em paz. (oração coordenada sindética explicativa) 3-A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa) 4-Leu o livro, portanto é capaz de descrever as personagens com detalhes. (oração coordenada sindética conclusiva) 5-Guarde seus pertences, que podem servir mais tarde. (oração coordenada sindética explicativa)')
 }
 
 function correto12(){
