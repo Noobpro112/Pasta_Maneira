@@ -138,7 +138,7 @@ function errado11(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User11').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi11').innerHTML = ('Correção:1- Correu demais, por isso caiu. (oração coordenada sindética conclusiva) 2-Dormiu mal, porque os sonhos não o deixaram em paz. (oração coordenada sindética explicativa) 3-A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa) 4-Leu o livro, portanto é capaz de descrever as personagens com detalhes. (oração coordenada sindética conclusiva) 5-Guarde seus pertences, que podem servir mais tarde. (oração coordenada sindética explicativa)')
+    document.getElementById('justi11').innerHTML = ('A conjunção "porém" traz a ideia de oposição: Os dados de 2008 são elevados, no entanto, são menores dos de 1992, ou seja, houve melhoria.')
 }
 
 function correto12(){
@@ -151,7 +151,7 @@ function errado12(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User12').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi12').innerHTML = 'Esta é uma oração coordenada sindética adversativa. "Conquanto" é sinônimo de "embora". Todas as outras orações são coordenadas sindéticas explicativas.'
+    document.getElementById('justi12').innerHTML = 'Alternativa correta: b) por isso, porque, mas, portanto, que. Correção: 1. Correu demais, por isso caiu. (oração coordenada sindética conclusiva) 2. Dormiu mal, porque os sonhos não o deixaram em paz. (oração coordenada sindética explicativa) 3. A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa) 4. Leu o livro, portanto é capaz de descrever as personagens com detalhes. (oração coordenada sindética conclusiva) 5. Guarde seus pertences, que podem servir mais tarde. (oração coordenada sindética explicativa)'
 }
 
 function correto13(){
@@ -164,7 +164,7 @@ function errado13(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User13').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi13').innerHTML = 'As orações coordenadas sindéticas apenas podem ser aditivas, adversativas, alternativas, conclusivas e explicativas'
+    document.getElementById('justi13').innerHTML = 'Esta é uma oração coordenada sindética adversativa. "Conquanto" é sinônimo de "embora". Todas as outras orações são coordenadas sindéticas explicativas.'
 }
 
 function correto14(){
@@ -177,7 +177,7 @@ function errado14(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User14').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi14').innerHTML = 'A conjunção "mas" traz a ideia de oposição. Responda: O narrador do texto tinha deixado de ser feliz? A resposta é: Pelo contrário, ele nunca tinha sido feliz.'
+    document.getElementById('justi14').innerHTML = 'A conjunção "mas" traz a ideia de oposição.     Responda: O narrador do texto tinha deixado de ser feliz? A resposta é: Pelo contrário, ele nunca tinha sido feliz.'
 }
 
 function correto15(){
@@ -216,7 +216,7 @@ function errado17(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User17').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi17').innerHTML = 'A oração "logo conseguiu uma bolsa de estudos" expressa a conclusão resultante da ação anterior de "ela estudou muito".'
+    document.getElementById('justi17').innerHTML = 'Alternativa correta: b) explicativo. Quanto às alternativas restantes: a) Concessão é sinônimo de permissão. As orações que trazem essa ideia são subordinadas (orações subordinadas adverbiais concessivas), mas no caso acima a oração é coordenada. c) O conectivo "que" não traz a ideia de soma. Exemplos de conectivos que fazem esse papel são: e, mas também, nem. d) O conectivo "que" não traz a ideia de contraste. Exemplos de conectivos que fazem esse papel são: contudo, entretanto, todavia. e) O conectivo "que" não traz a ideia de conclusão. Exemplos de conectivos que fazem esse papel são: então, logo, portanto.'
 }
 
 function correto18(){
@@ -229,7 +229,7 @@ function errado18(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User18').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi18').innerHTML = 'Alternativa correta: b) explicativo. Quanto às alternativas restantes: a- Concessão é sinônimo de permissão. As orações que trazem essa ideia são subordinadas (orações subordinadas adverbiais concessivas), mas no caso acima a oração é coordenada.c- O conectivo "que" não traz a ideia de soma. Exemplos de conectivos que fazem esse papel são: e, mas também, nem. d- O conectivo "que" não traz a ideia de contraste. Exemplos de conectivos que fazem esse papel são: contudo, entretanto, todavia. E-O conectivo "que" não traz a ideia de conclusão. Exemplos de conectivos que fazem esse papel são: então, logo, portanto.'
+    document.getElementById('justi18').innerHTML = 'No período em questão o autor justifica o motivo pelo qual achava que a felicidade não existia: desde pequenos a felicidade era muito abrangente, como nos contos de fadas.'
 }
 
 function correto19(){
