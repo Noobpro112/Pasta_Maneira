@@ -60,7 +60,7 @@ function errado5(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User5').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi5').innerHTML = 'Alternativa correta: e) Os dois verbos são “filmou” e “publicou”.'
+    document.getElementById('justi5').innerHTML = 'A oração coordenada sindética alternativa é introduzida pela conjunção "ou", indicando uma alternativa entre as opções "estuda muito" e "tirou boas notas".'
 }
 
 function correto6(){
@@ -73,7 +73,7 @@ function errado6(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User6').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi6').innerHTML = 'A conjunção "mas" traz a ideia de contraste. Isso quer dizer que somos pacifistas, apesar disso, não abrimos mão de estudos até para fins bélicos.'
+    document.getElementById('justi6').innerHTML = 'A oração coordenada na frase é introduzida pela conjunção "embora", assim caracterizando a oração com sentido de "Oposição"'
 }
 
 function correto7(){
@@ -86,7 +86,7 @@ function errado7(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User7').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi7').innerHTML = 'A conjunção "mas" traz a ideia de oposição, contraste ou compensação. Isso quer dizer que somos irrelevantes como potência econômica, apesar disso, somos extremamente representativos como população.'
+    document.getElementById('justi7').innerHTML = '"Pois" introduz uma oração coordenada sindética explicativa, fornecendo uma explicação para "ele se esforçou bastante."'
 }
 
 function correto8(){
@@ -99,7 +99,7 @@ function errado8(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User8').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi8').innerHTML = 'A oração acima traz a ideia de conclusão: se há um novo rei, logo haverá nova lei. Ela poderia ser escrita da seguinte forma: Reino com novo rei, (logo) povo com nova lei.'
+    document.getElementById('justi8').innerHTML = '"Mas" introduz uma oração coordenada adversativa, indicando contraposição entre "gostaria de ir ao cinema" e "estou ocupado hoje."'
 }
 
 function correto9(){
@@ -112,7 +112,7 @@ function errado9(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User9').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi9').innerHTML = 'A conjunção "e" pode ter valor o valor de contraste, tal como "mas, contudo, porém": Mauro não estudou nada, porém foi aprovado.'
+    document.getElementById('justi9').innerHTML = '"Não só... como também" indica adição, mostrando que ambas as ações estão ocorrendo.'
 }
 
 function correto10(){
@@ -125,7 +125,7 @@ function errado10(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User10').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi10').innerHTML = 'A conjunção "mas" estabelece uma ideia de oposição entre as orações: o fato de a internet ser o portal da nova era versus o número reduzido de pessoas com acesso a ela.'
+    document.getElementById('justi10').innerHTML = '"Portanto" indica uma relação conclusiva entre "ela estava cansada" e "decidiu descansar."'
 }
 
 function correto11(){
@@ -138,7 +138,7 @@ function errado11(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User11').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi11').innerHTML = ('A conjunção "porém" traz a ideia de oposição: Os dados de 2008 são elevados, no entanto, são menores dos de 1992, ou seja, houve melhoria.')
+    document.getElementById('justi11').innerHTML = 'Não há coordenação de conjunções aqui; as ações são listadas sem conjunções, o que constitui uma coordenação assindética.'
 }
 
 function correto12(){
@@ -151,7 +151,7 @@ function errado12(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User12').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi12').innerHTML = 'Alternativa correta: b) por isso, porque, mas, portanto, que. Correção: 1. Correu demais, por isso caiu. (oração coordenada sindética conclusiva) 2. Dormiu mal, porque os sonhos não o deixaram em paz. (oração coordenada sindética explicativa) 3. A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa) 4. Leu o livro, portanto é capaz de descrever as personagens com detalhes. (oração coordenada sindética conclusiva) 5. Guarde seus pertences, que podem servir mais tarde. (oração coordenada sindética explicativa)'
+    document.getElementById('justi12').innerHTML = '"Logo" indica uma relação de conclusão entre "ele não estuda" e "não passa nas provas."'
 }
 
 function correto13(){
@@ -164,7 +164,7 @@ function errado13(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User13').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi13').innerHTML = 'Esta é uma oração coordenada sindética adversativa. "Conquanto" é sinônimo de "embora". Todas as outras orações são coordenadas sindéticas explicativas.'
+    document.getElementById('justi13').innerHTML = '"Contudo" introduz uma oração coordenada adversativa, indicando uma contraposição entre "a chuva é intensa" e "as ruas estão secas."'
 }
 
 function correto14(){
@@ -177,7 +177,7 @@ function errado14(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User14').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi14').innerHTML = 'A conjunção "mas" traz a ideia de oposição.     Responda: O narrador do texto tinha deixado de ser feliz? A resposta é: Pelo contrário, ele nunca tinha sido feliz.'
+    document.getElementById('justi14').innerHTML = '"Todavia" introduz uma oração coordenada sindética alternativa, indicando uma escolha alternativa com uma condição implícita.'
 }
 
 function correto15(){
@@ -190,7 +190,7 @@ function errado15(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User15').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi15').innerHTML = 'Alternativa correta: b) adição - conclusão - oposição.'
+    document.getElementById('justi15').innerHTML = ' "De modo que" introduz uma oração coordenada sindética conclusiva, indicando uma conclusão lógica da ação anterior.'
 }
 
 function correto16(){
@@ -203,7 +203,7 @@ function errado16(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User16').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi16').innerHTML = ' A conjunção "pois" traz a ideia de conclusão. A partir da hipótese de engravidar na velhice, Sara expressa surpresa. Ela conclui que estando velha não pode engravidar, de modo que ri da situação.'
+    document.getElementById('justi16').innerHTML = ' "Portanto" indica uma relação conclusiva entre "ele foi aprovado no vestibular" e "comemorou com os amigos."'
 }
 
 function correto17(){
@@ -216,7 +216,7 @@ function errado17(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User17').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi17').innerHTML = 'Alternativa correta: b) explicativo. Quanto às alternativas restantes: a) Concessão é sinônimo de permissão. As orações que trazem essa ideia são subordinadas (orações subordinadas adverbiais concessivas), mas no caso acima a oração é coordenada. c) O conectivo "que" não traz a ideia de soma. Exemplos de conectivos que fazem esse papel são: e, mas também, nem. d) O conectivo "que" não traz a ideia de contraste. Exemplos de conectivos que fazem esse papel são: contudo, entretanto, todavia. e) O conectivo "que" não traz a ideia de conclusão. Exemplos de conectivos que fazem esse papel são: então, logo, portanto.'
+    document.getElementById('justi17').innerHTML = 'A oração "logo conseguiu uma bolsa de estudos" expressa a conclusão resultante da ação anterior de "ela estudou muito".'
 }
 
 function correto18(){
@@ -229,7 +229,7 @@ function errado18(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User18').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi18').innerHTML = 'No período em questão o autor justifica o motivo pelo qual achava que a felicidade não existia: desde pequenos a felicidade era muito abrangente, como nos contos de fadas.'
+    document.getElementById('justi18').innerHTML = 'Quanto às alternativas restantes: a) Concessão é sinônimo de permissão. As orações que trazem essa ideia são subordinadas (orações subordinadas adverbiais concessivas), mas no caso acima a oração é coordenada. c) O conectivo "que" não traz a ideia de soma. Exemplos de conectivos que fazem esse papel são: e, mas também, nem. d) O conectivo "que" não traz a ideia de contraste. Exemplos de conectivos que fazem esse papel são: contudo, entretanto, todavia. e) O conectivo "que" não traz a ideia de conclusão. Exemplos de conectivos que fazem esse papel são: então, logo, portanto.'
 }
 
 function correto19(){
@@ -256,4 +256,4 @@ function errado20(){
     document.getElementById('User20').innerHTML = 'Você Errou!'
     
     document.getElementById('justi20').innerHTML = 'As conjunções "e" estabelecem uma relação de adição, "Portanto" indica uma relação de conclusão, e "mas" introduz uma relação de oposição nas respectivas frases.'
-}
+}   
