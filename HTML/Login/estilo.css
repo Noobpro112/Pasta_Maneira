@@ -20,6 +20,24 @@ body {
     background-color: #f2f2f2;
     padding: 20px;
     background-size: cover;
+    animation: color-change-5x 8s linear infinite alternate both;
+    -webkit-animation: color-change-5x 8s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-5x {
+    0% { background: #19dcea }
+    25% { background: #b22cff }
+    50% { background: #ea2222 }
+    75% { background: #f5be10 }
+    100% { background: #3bd80d }
+}
+
+@keyframes color-change-5x {
+    0% { background: #19dcea }
+    25% { background: #b22cff }
+    50% { background: #ea2222 }
+    75% { background: #f5be10 }
+    100% { background: #3bd80d }
 }
 
 h1 {
@@ -30,14 +48,14 @@ h1 {
 .container {
     max-width: 900px;
     max-height: 9999px;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: #fff;
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.fomulario {
+.formulario {
     margin-bottom: 10px;
 }
 
@@ -84,4 +102,30 @@ p {
 #historicoDiv {
     max-height: 400px;
     overflow-y: auto;
+}
+
+.Login h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.Login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.Login button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Login button:hover {
+    background-color: #0cc705;
 }
