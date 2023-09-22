@@ -60,7 +60,7 @@ function errado5(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User5').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi5').innerHTML = 'A oração coordenada sindética alternativa é introduzida pela conjunção "ou", indicando uma alternativa entre as opções "estuda muito" e "tirou boas notas".'
+    document.getElementById('justi5').innerHTML = 'Os dois verbos são "filmou" e "publicou"'
 }
 
 function correto6(){
@@ -73,7 +73,7 @@ function errado6(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User6').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi6').innerHTML = 'A oração coordenada na frase é introduzida pela conjunção "embora", assim caracterizando a oração com sentido de "Oposição"'
+    document.getElementById('justi6').innerHTML = 'A conjução "mas" traz a ideia de contraste. Isso quer dizer que somos pacifistas, apenas disso, não abrimos mão de estudos até para fins bélifoc'
 }
 
 function correto7(){
@@ -86,7 +86,7 @@ function errado7(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User7').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi7').innerHTML = '"Pois" introduz uma oração coordenada sindética explicativa, fornecendo uma explicação para "ele se esforçou bastante."'
+    document.getElementById('justi7').innerHTML = 'A conjunção "mas" traz a ideia de oposição, contraste ou compensação. Isso quer dizer que somos irrelevantes como potência econômica, apesar disso, somos extremamente representativos como população.'
 }
 
 function correto8(){
@@ -99,7 +99,7 @@ function errado8(){
     caixa_misteriosa.style.display==='none' ? caixa_misteriosa.style.display = 'block' : caixa_misteriosa.style.display = 'none'
     document.getElementById('User8').innerHTML = 'Você Errou!'
     
-    document.getElementById('justi8').innerHTML = '"Mas" introduz uma oração coordenada adversativa, indicando contraposição entre "gostaria de ir ao cinema" e "estou ocupado hoje."'
+    document.getElementById('justi8').innerHTML = 'A oração acima traz a ideia de conclusão: se há um novo rei, logo haverá nova lei. Ela poderia ser escrita da seguinte forma: Reino com novo rei, (logo) povo com nova lei.'
 }
 
 function correto9(){
