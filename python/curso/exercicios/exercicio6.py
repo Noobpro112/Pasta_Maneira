@@ -1,4 +1,4 @@
-n=int(input('Escolha um numero'))
+n=int(input('Escolha um numero: '))
 d=n+n
 t=n+n+n
 raiz=n**(1/2)
