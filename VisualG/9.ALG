@@ -8,7 +8,7 @@ Inicio
    Escreva("Digite o tempo de passeio (em minutos): ")
    Leia(TempoPasseio)
 
-   CustoGas <- (TempoPasseio / 5) * QuantidadePessoas * 10
+   CustoGas <- int(TempoPasseio / 5) * QuantidadePessoas * 10
    Total <- CustoGas + (QuantidadePessoas * 20)
 
    Escreva("Total cobrado pelo passeio: R$", Total)
