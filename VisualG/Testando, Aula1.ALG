@@ -7,7 +7,7 @@ Algoritmo "semnome"
 Var
 // Seção de Declarações das variáveis 
 nome:caracter
-ano, idade:inteiro
+ano, idade, contador, n, contadorr:inteiro
 
 
 Inicio
@@ -19,6 +19,20 @@ escreval(nome)
 escreval("Em que ano você nasceu?")
 leia(ano)
 idade <- 2023 - ano
-escreva("Sua idade é", idade)
+escreval("Sua idade é", idade)
+se idade>18 entao
+escreval ("Você pode fazer a carteira de habilitação")
+senao
+escreval("VocÊ ainda não tem idade para isso")
+fimse
+escreva("Qual o numero desejado para modificar?")
+leia (n)
+para contador de 1 ate 20 faca
+     escreval("Sua lista de numero * 5 é: ",contador*n)
+fimpara
+enquanto contadorr <= 20 faca
+         Escreval (contadorr)
+         contadorr<- contadorr+1
+fimenquanto
 
 Fimalgoritmo
