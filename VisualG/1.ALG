@@ -13,6 +13,6 @@ Inicio
 
    Escreva("Nome: ", Nome)
    Escreva("Idade: ", Idade)
-   Escreva("EndereÃ§o: ", Endereco)
+   Escreva("Endereço: ", Endereco)
 
 Fimalgoritmo
